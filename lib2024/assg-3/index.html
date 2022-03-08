@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+	<head>
+		<title>Assignment 3</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="Assignment 3, HTML Form">
+	</head>
+	<body>
+		<!-- start of header  -->
+		<header id="header">
+			<h1>Please Fill Out This Form:</h1>
+		</header>
+    	<!-- header end  -->
+    	<!-- start of main -->
+    	<main id="main">
+			<div id="wrapper" class="wrapper">
+				<!-- start of section -->
+				<section id="html-form" class="main-section">
+					<!-- start of form -->
+					<form action="somepage.html" method="post">
+						<!-- start of contact information fieldset -->
+						<fieldset>
+							<legend>Contact Information</legend>
+							<!-- start of first name div -->
+							<div id="fn-container" class="form-elm">
+								<label for="FirstName">First Name</label>
+								<input type="text" name="FirstName" id="FirstName" placeholder="Enter your first name here." required>
+							</div>
+							<!-- end of first name div -->
+							<!-- start of last name div -->
+							<div id="ln-container" class="form-elm">
+								<label for="LastName">Last Name</label>
+								<input type="text" name="LastName" id="LastName" placeholder="Enter your last name here." required>
+							</div>
+							<!-- end of last name div -->
+							<!-- start of email div -->
+							<div id="email-container" class="form-elm">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" placeholder="Enter your email here."required>
+							</div>
+							<!-- end of email div -->
+							<!-- start of password div -->
+							<div id="pass-container" class="form-elm">
+								<label for="pass">Password</label>
+								<input type="password" name="pass" id="pass"required>
+							</div>
+							<!-- end of password div -->
+							<!-- start of address div -->
+							<div id="add-container" class="form-elm">
+								<label for="street-address">Street Address</label>
+								<input type="text" name="street-address" id="street-address" required>
+							</div>
+							<!-- end of address div -->
+							<!-- start of city div -->
+							<div id="city-container" class="form-elm">
+								<label for="city">City Name</label>
+								<input type="text" name="city" id="city" required>
+							</div>
+							<!-- end of city div -->
+							<!-- start of province div -->
+							<div id="prov-container" class="form-elm">
+								<label for="province">Province or State</label>
+								<select id="province" name="province">
+								<optgroup label="Province">
+									<option value="ab">Alberta</option>
+									<option value="bc">British Columbia</option>
+									<option value="mb">Manitoba</option>
+									<option value="nb">New Brunswick</option>
+									<option value="nf">Newfoundland and Labrador</option>
+									<option value="ns">Nova Scotia</option>
+									<option value="on">Ontario</option>
+									<option value="pe">Prince Edward Island</option>
+									<option value="qc">Quebec</option>
+									<option value="sk">Saskatchewan</option>
+								</optgroup>
+								<optgroup label="Territory">
+									<option value="nt">Northwest Territories</option>
+									<option value="nu">Nunavut</option>
+									<option value="yk">Yukon</option>
+								</optgroup>
+								<optgroup label="State">
+									<option value="ny">New York</option>
+									<option value="ca">California</option>
+									<option value="or">Oregon</option>
+									<option value="ot">Other</option>
+								</optgroup>
+								</select>
+							</div>
+							<!-- end of province div -->
+							<!-- start of country div -->
+							<div id="country-container" class="form-elm">
+								<label for="country">Country</label>
+								<select id="country" name="country">
+									<option value="cn">Canada</option>
+									<option value="us">United States</option>
+								</select>
+							</div>	
+							<!-- end of country div -->
+							<!-- start of postal code div -->
+							<div id="pc-container" class="form-elm">
+								<label for="postalcode">Postal Code</label>
+								<input type="text" pattern="[A-Za-z][0-9][A-Za-z]?[0-9][A-Za-z][0-9]" id="postalcode">
+							<!-- start of mobile div -->
+							<div id="num-container" class="form-elm">
+								<label for="num">Mobile Number:</label>
+								<input type="tel" id="num" name="num">
+							</div>
+							<!-- end of mobile div -->
+						</fieldset>
+						<!-- end of contact information fieldset -->
+						<!-- start of personal information fieldset -->
+						<fieldset>
+							<legend>About You</legend>
+							<!-- start of summary div -->
+							<div id="sum-container" class="form-elm">
+								<label for="summary">Summary</label>
+								<textarea name="summary" id="summary" placeholder="Enter your summary here.">
+								Please tell us about yourself.
+								</textarea>
+							</div>
+							<!-- end of summary div -->
+							<!--start of URL div -->
+							<div id="url-container" class="form-elm">
+								<label for="ur">Enter Your Website's URL:</label>	
+								<input type="url" name="ur" id="ur">
+							</div>
+							<!-- end of URL div -->
+							<!-- start of date of birth div -->
+							<div id="dob-container" class="form-elm">
+								<label for="dte">Date of Birth:</label>
+								<input type="date" name="dte" id="dte">
+							</div>
+							<!-- end of date of birth div -->
+							<!--start of gender div -->
+							<div id="gender-container" class="form-elm">
+								<p>Gender</p>
+								<label for="female">
+								<input type="radio" name="gender" id="female" value="female" checked>
+								Female
+								</label>
+						
+								<label for="male">
+								<input type="radio" name="gender" id="male" value="male" checked>
+								Male
+								</label>
+						
+								<label for="transgender">
+								<input type="radio" name="gender" id="transgender" value="transgender" checked>
+								Transgender
+								</label>
+						
+								<label for="non_binary/non_conforming">
+								<input type="radio" name="gender" id="non_binary/non_conforming" value="non_binary/non_conforming" checked>
+								Non-Binary/Non-Conforming
+								</label>
+						
+								<label for="no_reply">
+								<input type="radio" name="gender" id="no_reply" value="no_reply" checked>
+								Prefer not to respond
+								</label>
+
+							</div>
+							<!-- end of gender div -->
+							<!-- start of hobbies/interests div -->
+							<div id="hobby-container" class="form-elm">
+								<p>Please select the hobbies/interests that you enjoy from the following options:</p>
+
+								<label for="gardening">Gardening</label>
+								<input type="checkbox" name="hobbies" id="gardening" value="gardening"> <br>
+
+								<label for="cooking">Cooking</label>
+								<input type="checkbox" name="hobbies" id="cooking" value="cooking"> <br>
+
+								<label for="reading">Reading</label>
+								<input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
+
+								<label for="reading">Camping</label>
+								<input type="checkbox" name="hobbies" id="camping" value="camping"> <br>
+
+								<label for="none">None Of The Above</label>
+								<input type="checkbox" name="hobbies" id="none" value="none"> <br>
+							</div>
+							<!-- end of hobbies/interests div -->
+						</fieldset>
+						<!-- end of about you fieldset -->		
+						<!-- start of buttons -->
+						<button type="submit">Submit</button>
+						<button type="reset">Reset</button>
+						<!-- end of buttons -->
+					</form>
+					<!-- end of form -->
+				</section>
+				<!-- end of section -->
+			</div>	
+		</main>
+	</body>
+</html>
+				
