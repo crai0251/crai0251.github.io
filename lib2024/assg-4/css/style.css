@@ -1,4 +1,4 @@
-/*http://meyerweb.com/eric/tools/css/reset/ 
+@charset "utf-8" /*http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -55,10 +55,6 @@ img{
 	clear: both;
 }
 
-html {
-	font-family: "times new roman";
-}
-
 .desktop-nav {
 		display: block;
 }
@@ -97,6 +93,7 @@ header {
 .heading-1 {
 	width: 300px;
 	height: 50px;
+	font-size: 30px;
 	float: left;
 	padding: 10px 10px 0px 10px;
 }
@@ -136,6 +133,7 @@ header {
 
 h2 {
 	margin: 5px;
+	font-size: 25px;
 }
 
 .article-1 {
@@ -167,6 +165,7 @@ h2 {
 
 h3 {
 	margin: 10px;
+	font-size: 20px;
 }
 
 .gallery-image {
