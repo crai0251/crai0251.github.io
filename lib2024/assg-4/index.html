@@ -8,23 +8,23 @@
 <body>
 	<div id="container" class="container">
 		<!-- header start -->
-		<header class="site-header">
+		<header class="site-header clearfix">
 			<img src="img/logo.png" class="logo" alt="Cat Logo">
 			<h1 class="heading-1">Title Of Page</h1>
 			<!-- main navigation start -->
-			<nav class="nav clearfix">
+			<nav class="desktop-nav">
 				<ul>
 					<li>
-						<p>Home</p>
+						<a href="home.html">Home</a>
 					</li>
 					<li>
-						<p>About</p>
+						<a href="about.html">About</a>
 					</li>
 					<li>
-						<p>Contact</p>
+						<a href="contact.html">Contact</a>
 					</li>
 					<li>
-						<p>Work</p>
+						<a href="work.html">Work</a>
 					</li>
 				</ul>
 			</nav>
@@ -32,16 +32,19 @@
 			<div class="ham">Hamburger</div>
 			<!-- mobile navigation start -->
 			<div class="mobile-nav-container">
-				<nav class="main-nav-container mobile-nav">
+				<nav class="mobile-nav">
 					<ul class="main-nav">
 						<li>
-							<a href="contact-us.html">Contact Us</a>
+							<a href="home.html">Home</a>
 						</li>
 						<li>
-							<a href="about-us.html">About Us</a>
+							<a href="about.html">About</a>
 						</li>
 						<li>
-							<a href="images.html">Images</a>
+							<a href="contact.html">Contact</a>
+						</li>
+						<li>
+							<a href="work.html">Work</a>
 						</li>
 					</ul>
 				</nav>
@@ -72,11 +75,11 @@
 				<aside id="sidebar" class="sidebar">
 					<!-- the following image is copyright of Justine Craig -->
 					<div class="sidebar-image">
-						<img src="img/sidebar.jpg" alt="Sidebar Image">
+						<img src="img/sidebar.jpg" alt="Sidebar Image" width="280px" height="210px">
 					</div>
-					<div id="sidebar-text" class="sidebar-text">
+					<div>
 						<h3>Title of the sidebar</h3>
-						<p>
+						<p id="sidebar-text" class="sidebar-text">
 							Apple pie carrot cake apple pie lollipop chocolate lollipop. Gummi bears sweet roll pastry cookie donut danish pudding sweet roll brownie.
 						</p>
 					</div>
@@ -89,20 +92,25 @@
 			<section id="second-section" class="second-section">
 				<h3>Secondary Content Title</h3>
 				<!-- these three images are copyright of Justine Craig -->
-				<article>
-					<figure>
-						<img src="img/flower.jpg" alt="Flower Image" width="300" height="200">
-						<figcaption>Image 1</figcaption>
-					</figure>
-					<figure>
-						<img src="img/salad.jpg" alt="Salad Image" width="300" height="200">
-						<figcaption>Image 2</figcaption>
-					</figure>
-					<figure>
-						<img src="img/dish.jpg" alt="Dish Image" width="300" height="200">
-						<figcaption>Image 3</figcaption>
-					</figure>
-				</article>
+				<ul class="gallery clearfix">
+					<li class="gallery-image">
+						<figure>
+							<img src="img/flower.jpg" alt="Flower Image"> <figcaption>Image 1</figcaption>
+						</figure>
+					</li>
+					<li class="gallery-image">
+						<figure>
+							<img src="img/salad.jpg" alt="Salad Image">
+							<figcaption>Image 2</figcaption>
+						</figure>
+					</li>
+					<li class="gallery-image">
+						<figure>
+							<img src="img/dish.jpg" alt="Dish Image">
+							<figcaption>Image 3</figcaption>
+						</figure>
+					</li>
+				</ul>>
 			</section>
             <!-- secondary section end  -->
             
@@ -112,26 +120,32 @@
 		<!-- footer start -->			
 		<footer>
 			<div id="footer-container" class="footer-container">
-				<section class="copyright">
+				<!-- copyright start -->
+				<section class="copyright clearfix">
 					<p>CopyRight 2017, All Rights Reserved.</p>
 				</section>
-				<section class="footer-icons">
+				<!-- copyright end -->
+
+				<!-- footer icons start -->
+				<section>
 				<nav>
-					<ul>
+					<ul class="icon-container clearfix">
 						<li>
-							<a href="facebook.com"> <img src="img/facebook.png" alt="Facebook Icon" width="20" height="20"> </a>
+							<a class="footer-icon" href="facebook.com"> <img src="img/facebook.png" alt="Facebook Icon"> </a>
 						</li>
 						<li>
-							<a href="youtube.com"> <img src="img/youtube.png" alt="YouTube Icon" width="20" height="20"> </a>
+							<a class="footer-icon" href="youtube.com"> <img src="img/youtube.png" alt="YouTube Icon"> </a>
 						</li>
 						<li>
-							<a href="twitter.com"> <img src="img/twitter.png" alt="Twitter Icon" width="20" height="20"> </a>
+							<a class="footer-icon" href="twitter.com"> <img src="img/twitter.png" alt="Twitter Icon"></a>
 						</li>
 					</ul>
 				</nav>
 				</section>
+				<!-- footer icons end -->
 			</div>
 		</footer>
+		<!-- footer end -->
 	</div>
 </body>
 </html>

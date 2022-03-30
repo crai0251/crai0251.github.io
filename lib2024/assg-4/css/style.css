@@ -57,6 +57,10 @@ img{
 	clear: both;
 }
 
+html {
+	font-family: "times new roman";
+}
+
 .desktop-nav {
 		display: block;
 }
@@ -70,7 +74,15 @@ img{
 }
 
 .container {
-	max-width: 960px
+	max-width: 960px;
+}
+
+.main {
+	background-image: url(interlaced.png);
+}
+
+.main-section, .second-section, .footer-container, img {
+	width: 100%;
 }
 
 header {
@@ -81,45 +93,124 @@ header {
 .logo {
 	width: 110px;
 	float: left;
-	padding: 15px 45px 5px 45px;
+	padding: 5px 35px 0px 35px;
 }
 
 .heading-1 {
 	width: 300px;
 	height: 50px;
 	float: left;
-	padding: 10px;
+	padding: 10px 10px 0px 10px;
 }
 
-.nav ul {
+.desktop-nav {
 	width: 100%;
+	display: block;
 	float: left;
-	background: #7CC576 ;
+	background: #7CC576;
+	box-sizing: border-box;
 }
 
-.nav li p {
+.desktop-nav ul {
+	width: 100%;
+}
+
+.desktop-nav a {
 	background-color: #6DCFF6;
-	padding: 5px;
+	display: block;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 15px;
 	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
 	color: black;
 	height: 60px;
 	width: 165px;
 	box-sizing: border-box;
 }
 
-.nav li {
+.desktop-nav li {
 	float: left;
-	padding: 2px;
 	width: 25%;
 	box-sizing: border-box;
+}
+
+h2 {
+	margin: 5px;
 }
 
 .article-1 {
 	width: 60%;
 	float: left;
+	padding: 0px 5px 5px 5px;
+	box-sizing: border-box;
 }
 
 .sidebar {
 	width: 40%;
 	float: left;
+	padding: 15px;
+	box-sizing: border-box;
 }
+
+.sidebar-image {
+	margin: 10px;
+	width: 280px;
+	height: 210px;
+	box-sizing: border-box;
+}
+
+.sidebar-text {
+	font-size: 18px;
+	margin: 10px;
+	box-sizing: border-box;
+}
+
+h3 {
+	margin: 10px;
+}
+
+.gallery-image {
+	display: block;
+	width: 33%;
+	padding: 10px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.figure img {
+	width: 180px;
+	height: 140px;
+}
+
+figcaption {
+	text-align: center;
+}
+
+.copyright {
+	width: 50%;
+	float: left;
+	padding: 10px;
+	background-color: #7CC576;
+	box-sizing: border-box;
+}
+
+.footer-container {
+	width: 100%;
+	height: 100px;
+	float: left;
+	padding: 20px;
+	background-color: #7CC576;
+	box-sizing: border-box;
+} 
+
+.footer-icon {
+	float: right;
+	width: 35px;
+	height: 35px;
+	padding: 10px 5px 10px 5px;
+	background-color: #7CC576;
+}
+
+
