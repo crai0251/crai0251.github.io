@@ -98,8 +98,6 @@ table {
 }
 
 
-/*This @keyframes declaration will change the color from blue to orange to blue */
-
 @keyframes change-color {
 	0% {
 		border-top-color: #FFFFFF;
@@ -344,18 +342,18 @@ form {
 	box-sizing: border-box;
 }
 
-#name-result {
+.name-result {
 	font-size: 20px;
 	color: #72A9AE;
 	margin: 10px;
 }
 
-#email-result, #address-result, #province-result, #postalcode-result, #city-result {
+.email-result, .address-result, .province-result, .postalcode-result, .city-result {
 	font-size: 15px;
 	margin: 5px 20px 5px 20px;
 }
 
-#email-result a {
+.email-result a {
 	text-decoration: none;
 	color: black;
 }
