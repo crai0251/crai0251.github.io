@@ -144,14 +144,14 @@
 
 				<!-- form section start -->
 				<article id="profile-edit" class="profile-edit clearfix">
-
+					<h2>Edit Profile</h2>
 					<form action="somepage.html" method="post">
-						<legend class="form-header">Edit Profile</legend>
+						<h2>Edit Profile</h2>
 							
 						<!-- start of name div -->
 						<div id="name-container" class="form-elm">
-							<label for="Name">Name:</label>
-							<input type="text" name="name" id="name" placeholder="John Doe"required>
+							<label for="name">Name:</label>
+							<input type="text" name="name" id="name" placeholder="John Doe" required>
 						</div>
 							
 						<!-- start of email div -->
@@ -169,15 +169,14 @@
 						<!-- start of city div -->
 						<div id="city-container" class="form-elm">
 							<label for="city">City</label>
-							<input type="text" name="city" id="city" placeholder="Nepean"required>
+							<input type="text" name="city" id="city" placeholder="Nepean" required>
 						</div>
 							
 						<!-- start of province div -->
 						<div id="prov-container" class="form-elm">
-							<label for="province">Province</label>
 							<select id="province" name="province" required>
+							<label for="province">Select Province</label>
 							<optgroup>
-								<option disabled>Select Province</option>
 								<option value="ab">Alberta</option>
 								<option value="bc">British Columbia</option>
 								<option value="mb">Manitoba</option>
@@ -270,7 +269,6 @@
 			</div>
 		</footer>
 		<!-- footer end -->
-	</div>
 
 	<!-- including jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
