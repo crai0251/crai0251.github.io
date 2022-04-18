@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+	<head>
+		<title>Final Assignment</title>
+		<meta charset="utf-8">
+		<meta name="final" content="Final Assignment, HTML, CSS, Javascript, Table, Form, Profile">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://kit.fontawesome.com/2ae018a287.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<!-- overlay container and loader -->
+		<div class="overlay-container">
+			<div class="loader"></div>
+		</div>
+		
+		<!-- start of header  -->
+		<header id="site-header" class="site-header">
+			<div class="logo-container">
+				<p class="logo">My Logo</p>
+			</div>
+
+			<!-- main navigation start -->
+			<nav class="main-nav-container desktop-nav">
+				<ul class="main-nav clearfix">
+					<li>
+						<a class="dn-link" href="home.html">Home</a>
+					</li>
+					<li>
+						<a class="dn-link" href="about.html">About</a>
+					</li>
+					<li>
+						<a class="dn-link" href="schedule.html">Schedule</a>
+					</li>
+					<li>
+						<a class="dn-link" href="portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a class="dn-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- main navigation end -->
+
+			<div class="ham"><i class="fa-solid fa-bars"></i></div>
+			<!-- mobile navigation start -->
+			<div class="mobile-nav-container">
+				<nav class="main-nav-container mobile-nav">
+					<ul class="mobile-nav-ul">
+						<li>
+							<a class="mob-link" href="home.html">Home</a>
+						</li>
+						<li>
+							<a class="mob-link" href="about.html">About</a>
+						</li>
+						<li>
+							<a class="mob-link" href="schedule.html">Schedule</a>
+						</li>
+						<li>
+							<a class="mob-link" href="portfolio.html">Portfolio</a>
+						</li>
+						<li>
+							<a class="mob-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- mobile navigation end -->
+		</header>
+		<!-- header end -->
+
+		<!-- main start -->
+		<main id="main" class="main clearfix">
+			<!-- main section start -->
+			<section class="main-section">
+				<!-- about section start -->
+				<article id="about" class="about-section">
+					<h2>About</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et nunc eu quam suscipit convallis sit amet blandit ipsum. Duis dignissim dolor a arcu scelerisque, non feugiat leo mattis. Vestibulum tellus magna, consectetur rhoncus metus quis, tempus feugiat ipsum. Aliquam finibus ut felis id suscipit. Sed placerat purus dignissim aliquet elementum. Nullam nunc nisi, auctor auctor nibh sit amet, facilisis vestibulum nunc. Pellentesque neque lacus, lobortis nec sodales vel, lobortis eu nisi. Nam efficitur magna nisl, id sagittis nunc ullamcorper vitae. Vivamus pellentesque augue eu auctor pulvinar. Mauris volutpat, nisl sed gravida scelerisque, libero risus lobortis magna, ut feugiat lacus elit luctus felis.</p><br>
+					<p>Phasellus in dolor est. Proin arcu mi, dapibus et diam sed, efficitur aliquam felis. Aenean venenatis vestibulum ipsum, accumsan tristique dui eleifend sit amet. Vivamus et pharetra metus. Nam ut purus odio. Integer id ante ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo massa felis, ac euismod tortor hendrerit eu. Vivamus feugiat a nibh eu laoreet.</p>
+				</article>
+
+				<!-- image section start -->
+				<aside id="image" class="image-section">
+					<!-- image copyright Justine Craig -->
+					<img src="img/main-image.jpg" alt="Image 1">
+				</aside>
+			</section>
+
+			<!-- table section start -->
+			<section id="table" class="table-section">
+				<table id="table" class="table clearfix">
+					<h2>Schedule</h2>
+					<thead id="table-header" class="table-header">
+                        <tr>
+                           	<th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body" class="table-body">
+                        <tr>
+                            <td>0:900 - 11:00</td>
+                            <td>Communications 1</td>
+                            <td>Client Services</td>
+                            <td>Special Collections</td>
+                            <td>Directed Research Seminar</td>
+                            <td>Client Services</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 - 12:30</td>
+                            <td>Reference</td>
+                            <td>Internet App</td>
+                            <td>Library Software</td>
+                            <td>French</td>
+                            <td>Reference</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:00</td>
+                            <td>Acquisitions</td>
+                            <td>General Elective</td>
+                            <td>Marketing</td>
+                            <td>Emerging Library Tech</td>
+                            <td>Library Software</td>
+                        </tr>
+                        <tr>
+                           	<td>15:30 - 17:30</td>
+                            <td>French</td>
+                            <td>French</td>
+                            <td>Acquisitions</td>
+                            <td>Subject Analysis</td>
+                            <td>Internet App</td>
+                        </tr>
+                    </tbody>
+                </table>
+			</section>
+
+			<!-- profile section start -->
+			<section id="profile" class="profile-section">
+
+				<!-- form section start -->
+				<article id="profile-edit" class="profile-edit clearfix">
+
+					<form action="somepage.html" method="post">
+						<legend class="form-header">Edit Profile</legend>
+							
+						<!-- start of name div -->
+						<div id="name-container" class="form-elm">
+							<label for="Name">Name:</label>
+							<input type="text" name="name" id="name" placeholder="John Doe"required>
+						</div>
+							
+						<!-- start of email div -->
+						<div id="email-container" class="form-elm">
+							<label for="email">Email:</label>
+							<input type="email" name="email" id="email" placeholder="johnDoe@algonquincollge.com" required>
+						</div>
+							
+						<!-- start of address div -->
+						<div id="add-container" class="form-elm">
+							<label for="address">Address</label>
+							<input type="text" name="address" id="address" placeholder="1385 Woodroffe Ave." required>
+						</div>
+							
+						<!-- start of city div -->
+						<div id="city-container" class="form-elm">
+							<label for="city">City</label>
+							<input type="text" name="city" id="city" placeholder="Nepean"required>
+						</div>
+							
+						<!-- start of province div -->
+						<div id="prov-container" class="form-elm">
+							<label for="province">Province</label>
+							<select id="province" name="province" required>
+							<optgroup>
+								<option disabled>Select Province</option>
+								<option value="ab">Alberta</option>
+								<option value="bc">British Columbia</option>
+								<option value="mb">Manitoba</option>
+								<option value="nb">New Brunswick</option>
+								<option value="nf">Newfoundland and Labrador</option>
+								<option value="ns">Nova Scotia</option>
+								<option value="on">Ontario</option>
+								<option value="pe">Prince Edward Island</option>
+								<option value="qc">Quebec</option>
+								<option value="sk">Saskatchewan</option>
+							</optgroup>
+							</select>
+						</div>
+							
+						<!-- start of postal code div -->
+						<div id="pc-container" class="form-elm">
+							<label for="postalcode">Postal Code</label>
+							<input type="text" pattern="[A-Za-z][0-9][A-Za-z]?[0-9][A-Za-z][0-9]" id="postalcode" placeholder="K2W 1F5" required>
+						</div>
+
+						<!-- submit button -->
+						<button type="submit">Submit</button>
+					</form>
+				</article>
+
+				<aside id="profile-info" class="profile-info">
+					<h2>Profile Info</h2>
+					<ul id="results" class="results clearfix">
+						<li class="icon-1"><span class="fa-solid fa-user fa-border"></span></li>
+						<li class="name-result">John Doe</li>
+						<li class="email-result"><a href="#" id="email_result">johnDoe@algonquincollge.com</a></li>
+						<li class="add-result city-result">1385 Woodroffe Ave. Nepean</li>
+						<li class="prov-result pc-result">ON, K2G 1V8</li>
+						<li class="icon-2"><span class="fa-regular fa-envelope"></span></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<!-- main section end -->
+
+		<!-- footer start -->
+		<footer>
+			<div id="footer-container" class="footer-container clearfix">
+				
+				<!-- footer links start -->
+				<section class="footer-nav">
+				<nav>
+					<h4>Quick Links</h4>
+					<ul class="link-container clearfix">
+						<li>
+							<a class="footer-link" href="schedule.html">Schedule</a>
+						</li>
+						<li>
+							<a class="footer-link" href="about.html">About</a>
+						</li>
+						<li>
+							<a class="footer-link" href="portfolio.html">Portfolio</a>
+						</li>
+						<li>
+							<a class="footer-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				</section>
+				<!-- footer links end -->
+
+				<!-- footer icons start -->
+				<section class="footer-icons">
+					<h4>Follow Us</h4>
+					<ul class="icon-container clearfix">
+						<li>
+							<a class="footer-icon" href="facebook.com"> <i class="fa-brands fa-facebook"></i></a>
+						</li>
+						<li>
+							<a class="footer-icon" href="youtube.com"> <i class="fa-brands fa-youtube"></i></a>
+						</li>
+						<li>
+							<a class="footer-icon" href="twitter.com"> <i class="fa-brands fa-twitter"></i></a>
+						</li>
+					</ul>
+				</section>
+				<!-- footer icons end -->
+
+				<!-- footer address start -->
+				<section class="address-container clearfix">
+					<h4>Address</h4>
+					<p class="footer-address">1385 Woodroffe Ave.<br>Nepean, ON K2G 1V8<br>Canada</p>
+				</section>
+				<!-- footer address end -->
+			</div>
+		</footer>
+		<!-- footer end -->
+	</div>
+
+	<!-- including jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- linking javascript -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
+
+				
