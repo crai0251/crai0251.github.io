@@ -145,7 +145,7 @@
 				<!-- form section start -->
 				<article id="profile-edit" class="profile-edit clearfix">
 					<h2>Edit Profile</h2>
-					<form action="somepage.html" method="post">
+					<form class="form" action="somepage.html" method="post">
 							
 						<!-- start of name div -->
 						<div id="name-container" class="form-elm">
@@ -191,24 +191,26 @@
 						<!-- start of postal code div -->
 						<div id="pc-container" class="form-elm">
 							<label for="postalcode">Postal Code</label>
-							<input type="text" pattern="[A-Za-z][0-9][A-Za-z]?[0-9][A-Za-z][0-9]" id="postalcode" placeholder="K2W 1F5" required>
+							<input type="text" name="postalcode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" id="postalcode" placeholder="K2W 1F5" required>
 						</div>
 
 						<!-- submit button -->
-						<button type="submit">Submit</button>
+						<button id="submit" type="submit">Submit</button>
 					</form>
 				</article>
 
 				<aside id="profile-info" class="profile-info">
 					<h2>Profile Info</h2>
-					<ul id="results" class="results clearfix">
+					<div id="results">
+					<ul class="results clearfix">
 						<li class="icon-1"><span class="fa-solid fa-user fa-border"></span></li>
-						<li class="name-result">John Doe</li>
-						<li class="email-result"><a href="#" id="email_result">johnDoe@algonquincollge.com</a></li>
-						<li class="add-result city-result">1385 Woodroffe Ave. Nepean</li>
-						<li class="prov-result pc-result">ON, K2G 1V8</li>
-						<li class="icon-2"><span class="fa-regular fa-envelope"></span></li>
+						<li id="name-result">John Doe</li>
+						<li id="email-result"><a href="#" id="email_result">johnDoe@algonquincollge.com</a></li>
+						<li id="address-result city-result">1385 Woodroffe Ave. Nepean</li>
+						<li id="province-result postalcode-result">ON, K2G 1V8</li>
+						<li id="icon-2"><span class="fa-regular fa-envelope"></span></li>
 					</ul>
+					</div>
 				</aside>
 			</section>
 		</main>

@@ -59,6 +59,72 @@ table {
 
 /*mobile first design*/
 
+/*overlay loader*/
+
+.overlay-container {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	top: 0;
+	z-index: 2;
+}
+
+.loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 14px solid #72A9AE;
+	border-radius: 50%;
+	border-top: 16px solid #FFFFFF;
+	animation: spin 5s linear infinite, change-color 5s ease-in-out infinite, border-radius-change 2s ease infinite;
+}
+
+
+/*keyframes declarion*/
+
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+/*This @keyframes declaration will change the color from blue to orange to blue */
+
+@keyframes change-color {
+	0% {
+		border-top-color: #FFFFFF;
+	}
+	50% {
+		border-top-color: #72A9AE;
+	}
+	/*100% is ending*/
+	100% {
+		border-top-color: #FFFFFF;
+	}
+}
+
+@keyframes border-radius-change {
+	0% {
+		border-radius: 50%;
+	}
+	50% {
+		border-radius: 0%;
+	}
+	100% {
+		border-radius: 50%;
+	}
+}
+
 /*header styles*/
 
 header {
@@ -109,6 +175,12 @@ body {
 	font-size: 17px;
 	color: black;
 	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.dn-link:hover {
+	color: #ffffff;
+
 }
 
 .ham {
@@ -144,6 +216,9 @@ body {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 10px;
+	font-size: 17px;
+	color: black;
+	text-decoration: none;
 }
 
 .main {
@@ -193,14 +268,6 @@ th {
 }
 
 h2 {
-	font-size: 30px;
-	text-transform: uppercase;
-	color: #72A9AE;
-	padding-bottom: 25px;
-	box-sizing: border-box;
-}
-
-legend {
 	font-size: 30px;
 	text-transform: uppercase;
 	color: #72A9AE;
@@ -277,18 +344,18 @@ form {
 	box-sizing: border-box;
 }
 
-.name-result {
+#name-result {
 	font-size: 20px;
 	color: #72A9AE;
 	margin: 10px;
 }
 
-.email-result, .add-result, .prov-result, .pc-result {
+#email-result, #address-result, #province-result, #postalcode-result, #city-result {
 	font-size: 15px;
 	margin: 5px 20px 5px 20px;
 }
 
-.email-result a {
+#email-result a {
 	text-decoration: none;
 	color: black;
 }
@@ -337,6 +404,11 @@ button {
 	margin: 10px 20px 10px 10px;
 	border: 1px solid black;
 	background-color: #ffffff;
+	transition: all 0.3s ease;
+}
+
+button:hover {
+	background: #72A9AE;
 }
 
 .profile-info {
