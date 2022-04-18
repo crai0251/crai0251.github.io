@@ -27,17 +27,20 @@ function showHideMobileMenu() {
 	}
 }
 
-function showformValues(form){
+// couldn't figure out how to get this part to work :( 
+//and it was affecting some of my css stylings, so commented it out
 
-	var formValues = $(form).serializeArray(); 
+//function showformValues(form){
+
+	//var formValues = $(form).serializeArray(); 
 		
-	$.each(formValues, function(index, field){
+	//$.each(formValues, function(index, field){
 
 
-		$("#results").find("."+field.name+"_result").text(field.value);
+		//$("#results").find("."+field.name+"_result").text(field.value);
 
-		if(field.name=="email"){
-			$("#results").find("."+field.name+"_result").attr("href", "mailto:"+field.value);
-		}
-	});				
-}
+		//if(field.name=="email"){
+			//$("#results").find("."+field.name+"_result").attr("href", "mailto:"+field.value);
+		//}
+	//});				
+//}
