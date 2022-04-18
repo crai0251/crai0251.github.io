@@ -34,10 +34,10 @@ function showformValues(form){
 	$.each(formValues, function(index, field){
 
 
-		$("#results").find("#"+field.name+"_result").text(field.value);
+		$("#results").find("."+field.name+"_result").text(field.value);
 
 		if(field.name=="email"){
-			$("#results").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
+			$("#results").find("."+field.name+"_result").attr("href", "mailto:"+field.value);
 		}
 	});				
 }
